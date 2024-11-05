@@ -10,7 +10,14 @@ public class Entity : MonoBehaviour
     public struct EntityStats
     {
         public float MovementSpeed;
-    }
+        public float MaxHealth;
 
+    }
+    [NonSerialized]
+    public float CurrentHealth;
+    bool dead = false;
     public EntityStats stats;
+    private void Start(){
+        CurrentHealth = stats.MaxHealth;
+    }
 }

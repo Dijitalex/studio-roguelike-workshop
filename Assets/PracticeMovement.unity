@@ -642,7 +642,8 @@ GameObject:
   - component: {fileID: 1042569590}
   - component: {fileID: 1042569589}
   - component: {fileID: 1042569593}
-  - component: {fileID: 1042569594}
+  - component: {fileID: 1042569595}
+  - component: {fileID: 1042569596}
   m_Layer: 0
   m_Name: LeFishe
   m_TagString: Untagged
@@ -809,7 +810,7 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1042569594
+--- !u!114 &1042569595
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -818,11 +819,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1042569587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a445c0c117c85daebc2f38942d750be, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c7a0441c05523e48bf721b8b9763ccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1042569589}
-  speed: 5
+  stats:
+    MaxHealth: 0
+    MovementSpeed: 0
+  DeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1042569596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042569587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80cdc1edad0818242a968963a2ec5120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody: {fileID: 1042569589}
 --- !u!1 &1496801707
 GameObject:
   m_ObjectHideFlags: 0

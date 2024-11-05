@@ -20,9 +20,10 @@ public class MapGenerator : MonoBehaviour
     public static Map RandomMap(int width, int height, int minRooms, int maxRooms, float failChance, float itemChance)
     {
         Map map = new(width, height);
+        map.Get(cell.x, cell.y);
         // to get a cell in the map, use map.Get(cell.x, cell.y)
         // to get or set the cell type, use map.Get(cell.x, cell.y).Type
-        // eg. map.get(cell.x, cell.y).Type = MapEntryType.NormalRoom;
+        // eg. map.Get(cell.x, cell.y).Type = MapEntryType.NormalRoom;
 
         List<Vector2Int> neighborOffsets = new()
         {
